@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+}
+.name {
+    text-align: center;
+    font-size: 60px;
+    font-family: Lucida Handwriting;
+    margin-bottom: -105px;
+    color: #dbdada;
+    animation: fadeIn 2s;
+}
+.occupation {
+    text-align: center;
+    font-size: 45px;
+    display: block;
+    font-family: Georgia;
+    color: #dbdada;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
