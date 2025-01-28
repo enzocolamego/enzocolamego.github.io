@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +9,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #1a1a1a;
+    background-color: var(--background-color);
 }
 
 header {
@@ -19,21 +19,22 @@ header {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    position: relative;
 }
 
 main {
-    background-color: #1a1a1a;
+    background-color: var(--background-color);
 }
 
 .name {
     text-align: center;
-    font-size: 5vh;
-    font-family: "Montserrat", serif;
-    font-weight: 1000;
+    font-size: 3.2vw;
+    font-family: "Charm", serif;
+    font-weight: 700;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: -10px;
     display: inline-block;
-    color: #dbdada;
+    color: var(--text-color);
     animation: fadeIn 2s;
     white-space: nowrap;
 }
@@ -41,18 +42,11 @@ main {
 .occupation {
     text-align: center;
     font-size: 4vh;
+    font-style: italic;
     display: block;
     font-family: "Baskervville", serif;
-    color: #dbdada;
+    color: var(--text-color);
     animation: fadeIn 3s;
-}
-
-.about {
-    font-size: 100px;
-    height: 300vh;
-    margin-top: 370px;
-    color: #dbdada;
-    animation: sliding 12s linear infinite;
 }
 
 @keyframes fadeIn {
@@ -70,14 +64,5 @@ main {
     }
     100%{
         opacity: 1;
-    }
-}
-
-@keyframes sliding {
-    from {
-        transform: translateX(-600px);
-    }
-    to {
-        transform: translateX(0);
     }
 }
