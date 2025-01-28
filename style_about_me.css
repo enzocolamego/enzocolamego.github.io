@@ -1,0 +1,18 @@
+.about {
+    font-size: 6vh;
+    line-height: -50px;
+    margin-top: 370px;
+    position: relative;
+    top: -300px;
+    color: var(--text-color);
+    animation: sliding 12s linear infinite;
+}
+
+@keyframes sliding {
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
