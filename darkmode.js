@@ -1,21 +1,26 @@
-let lightmode = localStorage.getItem('lightmode');
-const button = document.querySelector('.button');
+let darkmode = localStorage.getItem('darkmode');
+const button = document.querySelector('.light-dark-mode-button');
 
-const enableLightmode = () => {
-    document.body.classList.add('lightmode');
-    localStorage.setItem('lightmode', 'active');
-};
-
-const disableLightmode = () => {
+const enableDarkmode = () => {
+    document.body.classList.add('darkmode');
     document.body.classList.remove('lightmode');
-    localStorage.setItem('lightmode', null);
+    localStorage.setItem('darkmode', 'active');
 };
 
-if (lightmode === "active") {
-    enableLightmode();
+const disableDarkmode = () => {
+    document.body.classList.remove('darkmode');
+    document.body.classList.add('lightmode');
+    localStorage.setItem('darkmode', null);
+};
+
+if (darkmode === "active") {
+    enableDarkmode();
+} else {
+    disableDarkmode();
 }
 
+
 button.addEventListener('click', () => {
-    lightmode = localStorage.getItem('lightmode');
-    lightmode !== "active" ? enableLightmode() : disableLightmode();
+    darkmode = localStorage.getItem('darkmode');
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 });
