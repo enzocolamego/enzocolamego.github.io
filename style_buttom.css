@@ -1,14 +1,14 @@
 :root {
-    --background-color: #141414;
-    --text-color: #bb3434;
+    --background-color: #ffffff;
+    --text-color: #dabe62;
 }
 
-.lightmode {
-    --background-color: #eeeeee;
-    --text-color: #b19725;
+.darkmode {
+    --background-color: #090809;
+    --text-color: #d8d8d8;
 }
 
-.button {
+.light-dark-mode-button {
     width: 70px;
     height: 35px;
     padding: 0;
@@ -24,22 +24,52 @@
     left: 20px;
 }
 
-.button svg {
+.light-dark-mode-button svg {
     fill: var(--text-color);
 }
 
-.button svg:first-child{
+.light-dark-mode-button svg:last-child {
     display: none;
 }
 
-.lightmode .button svg:last-child{
+.darkmode .light-dark-mode-button svg:first-child{
     display: none;
 }
 
-.lightmode .button svg:first-child{
+.darkmode .light-dark-mode-button svg:last-child{
     display: block;
 }
 
-.button:hover {
+.light-dark-mode-button:hover {
     transform: translateY(-5px)
 }
+
+.translate-button {
+    width: 70px;
+    height: 35px;
+    padding: 0;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    border-color: var(--text-color);
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
+
+.translate-button:hover {
+    transform: translateY(-5px)
+}
+
+.translate-button .Bra {
+    display: none;
+}
+
+.translate-button div{
+    color: var(--text-color);
+}
+
