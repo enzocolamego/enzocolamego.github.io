@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lexend+Deca:wght@900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +9,7 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--background-color);
 }
 
@@ -20,10 +21,6 @@ header {
     height: 100vh;
     margin: 0;
     position: relative;
-}
-
-main {
-    background-color: var(--background-color);
 }
 
 .name {
@@ -56,13 +53,13 @@ main {
     to {
         transform: translateY(0);
     }
-    0%{
+    0% {
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
