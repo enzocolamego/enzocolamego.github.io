@@ -1,18 +1,65 @@
-.about {
-    font-size: 6vh;
-    line-height: -50px;
-    margin-top: 370px;
-    position: relative;
-    top: -300px;
-    color: var(--text-color);
-    animation: sliding 12s linear infinite;
+.line-1{
+    border-bottom: 4px solid var(--text-color);
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-@keyframes sliding {
-    from {
-        transform: translateX(-600px);
-    }
-    to {
-        transform: translateX(0);
-    }
+#about {
+    font-size: 6vh;
+    line-height: 1.4;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    top: 5.9em;
+    right: 0.05em;
+    color: var(--text-color);
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+#description{
+    font-size: 3vh;
+    width: 56%;
+    text-align: center;
+    position: relative;
+    top: 13.1em;
+    left: 14em;
+    font-family: "Martel", serif;
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.transition-svg {
+    background-color: var(--text-color);
+}
+
+.hidden-text {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 2s;
+}
+
+.line-2 {
+    border-bottom: 4px solid var(--text-color);
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 720px;
+}
+
+.ponto {
+    position: relative;
+    top: 1117px;
+    color: var(--text-color);
 }
