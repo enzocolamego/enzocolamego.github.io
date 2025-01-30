@@ -11,7 +11,7 @@
     margin-top: 20px;
     text-align: center;
     position: relative;
-    top: 5.9em;
+    top: 6.3em;
     right: 0.05em;
     color: var(--text-color);
     font-family: "Lexend Deca", serif;
@@ -19,17 +19,18 @@
     font-weight: 600;
 }
 
-#description{
+#description {
     font-size: 3vh;
-    width: 56%;
+    width: 50%;
     text-align: center;
-    position: relative;
-    top: 13.1em;
-    left: 14em;
+    margin: 30px auto;
     font-family: "Martel", serif;
     font-weight: 200;
     color: var(--text-color);
+    position: relative;
+    top: 12em;
 }
+
 
 .transition-svg {
     background-color: var(--text-color);
