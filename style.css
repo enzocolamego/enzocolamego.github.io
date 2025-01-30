@@ -25,7 +25,7 @@ header {
 
 .name {
     text-align: center;
-    font-size: 3.2vw;
+    font-size: 60px;
     font-family: "Charm", serif;
     font-weight: 700;
     font-style: italic;
@@ -38,12 +38,36 @@ header {
 
 .occupation {
     text-align: center;
-    font-size: 4vh;
+    font-size: 46px;
     font-style: italic;
     display: block;
     font-family: "Baskervville", serif;
     color: var(--text-color);
     animation: fadeIn 3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.menu nav a {
+    margin: 0 200px;
+}
+
+
+.menu {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 26px;
+    left: 225px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Baskervville", serif;
+    font-style: italic;
 }
 
 @keyframes fadeIn {
