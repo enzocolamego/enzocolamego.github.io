@@ -1,0 +1,22 @@
+{
+    "en": {
+        "title": "Enzo Caresato Colamego's Portfolio",
+        "name": "Enzo Caresato Colamego",
+        "occupation": "Data Analyst & Developer",
+        "about": "About me",
+        "projects": "Projects",
+        "contact": "Contact",
+        "about_section": "ABOUT ME",
+        "description": "Currently pursuing a Data Science degree at UFABC (Federal University of ABC), I work with tools such as Python, C, R, SQL, Excel, HTML, CSS, and JavaScript. My goal is to explore hidden patterns in data and transform them into powerful insights, generating a real impact through technology. I am always seeking to improve my knowledge and apply technical expertise to add value in every project."
+    },
+    "pt-br": {
+        "title": "Portfólio de Enzo Caresato Colamego",
+        "name": "Enzo Caresato Colamego",
+        "occupation": "Analista de Dados & Desenvolvedor",
+        "about": "Sobre mim",
+        "projects": "Projetos",
+        "contact": "Contato",
+        "about_section": "SOBRE MIM",
+        "description": "Atualmente cursando Ciência de Dados na UFABC (Universidade Federal do ABC), trabalho com ferramentas como Python, C, R, SQL, Excel, HTML, CSS e JavaScript. Meu objetivo é explorar padrões ocultos nos dados e transformá-los em insights poderosos, gerando um impacto real por meio da tecnologia. Estou sempre buscando aprimorar meu conhecimento e aplicar expertise técnica para agregar valor em cada projeto."
+    }
+}
