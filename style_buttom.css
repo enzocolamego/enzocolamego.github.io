@@ -4,7 +4,7 @@
 }
 
 .darkmode {
-    --background-color: #090809;
+    --background-color: #131313;
     --text-color: #d8d8d8;
 }
 
@@ -63,10 +63,6 @@
 
 .translate-button:hover {
     transform: translateY(-5px)
-}
-
-.translate-button .Bra {
-    display: none;
 }
 
 .translate-button div{
