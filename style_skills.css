@@ -1,0 +1,48 @@
+.line-3 {
+    border-bottom: 4px solid var(--text-color);
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 81.2em;
+}
+
+#skills {
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 20.1em;
+    font-size: 60px;
+    color: var(--text-color);
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+#hard {
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    margin: 30px;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    top: 45em;
+}
+
+#soft {
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+    margin: 30px;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    top: 35em;
+    left: 35.7em;
+}

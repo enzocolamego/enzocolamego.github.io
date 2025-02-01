@@ -1,0 +1,11 @@
+#projects {
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    top: 30.5em;
+    font-size: 60px;
+    color: var(--text-color);
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
