@@ -32,7 +32,6 @@
     top: 12em;
 }
 
-
 .transition-svg {
     background-color: var(--text-color);
 }
@@ -41,7 +40,6 @@
     opacity: 0;
     filter: blur(15px);
     transform: translateY(-100%);
-    transition: all 2s;
 }
 
 .show {
