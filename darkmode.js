@@ -19,7 +19,6 @@ if (darkmode === "active") {
     disableDarkmode();
 }
 
-
 button.addEventListener('click', () => {
     darkmode = localStorage.getItem('darkmode');
     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
