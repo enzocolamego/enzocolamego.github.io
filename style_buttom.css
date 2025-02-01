@@ -72,3 +72,23 @@
 .icons {
     font-size: 15px;
 }
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1px 2px;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollTopBtn svg {
+    fill: var(--background-color)
+}
+
+#scrollTopBtn:hover {
+    transform: translateY(-5px)
+}
