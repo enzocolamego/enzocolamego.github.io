@@ -2,7 +2,7 @@
 
 <!-- This site was created by Enzo Caresato Colamego -->
 
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="keywords" content="Enzo Caresato Colamego, Enzo Caresato, Enzo Colamego, Enzo, Caresato, Colamego, Portfolio, ">
@@ -13,14 +13,18 @@
         <meta property="og:title" content="Enzo Caresato Colamego • Data analyst &amp; Developer">
         <meta property="og:description" content="Starting a career, improving my skills and helping bussinesses to grow and make better decisons.">
         <title>Enzo Caresato Colamego's Portfolio</title>
+        <link class="icone" rel="shortcut icon" href="black-hole.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style_buttom.css">
         <link rel="stylesheet" href="style_about_me.css">
         <link rel="stylesheet" href="style_line.css">
+        <link rel="stylesheet" href="style_projects.css">
+        <link rel="stylesheet" href="style_skills.css">
         <script type="text/javascript"src="darkmode.js" defer></script>
         <script type="text/javascript"src="unhidden.js" defer></script>
         <script type="text/javascript"src="translate.js" defer></script>
         <script type="text/javascript"src="menu.js" defer></script>
+        <script type="text/javascript"src="topbutton.js" defer></script>
     </head>
 
     <body>
@@ -30,6 +34,7 @@
             <section class="menu">
                 <nav>
                     <a class="menu-about" href="#about">About me</a>
+                    <a class="menu-skills" href="#skills">Skills</a>
                     <a class="menu-projects" href="#projects">Projects</a>
                     <a class="menu-contact" href="#contact">Contact</a>
                 </nav>
@@ -43,14 +48,25 @@
                     <div class="Bra"><strong>Pt-Br</strong></div>
                 </div>
             </button>
+            <button id="scrollTopBtn" onclick="scrollToTop()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#dbdada"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
+            </button>
             </section>
         </header>
         <div class="line-1"></div>
         <main>            
-            <div class="hidden-text" id="about">ABOUT ME</div>
+            <div class="hidden-text" id="about"><h3>ABOUT ME</h3></div>
             <p class="hidden-text" id="description">Currently pursuing a Data Science degree at UFABC (Universidade Federal do ABC), I work with tools such as Python, C, R, SQL, Excel, HTML, CSS, and JavaScript. My goal is to explore hidden patterns in data and transform them into powerful insights, generating a real impact through technology. I am always seeking to improve my knowledge and apply technical expertise to add value in every project.</p>
             <div class="line-2"></div>
-            <p class="ponto">enzo</p>
+            <div class="hidden-text" id="skills"><h3>SKILLS</h3></div>
+            <div class="hidden-text" id="hard"><h4>Hard Skills</h4>
+            </div>
+            <div class="hidden-text" id="soft"><h4>Soft Skills</h4></div>
+            <div class="line-3"></div>
+            <div id="projects"><h4>PROJECTS</h4></div>
         </main>
+        <footer>
+
+        </footer>
     </body>
 </html>
