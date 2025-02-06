@@ -1,29 +1,44 @@
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        const offset = 320; // Ajuste esse valor para compensar menus fixos
-        smoothScroll(target, offset, 1500); // Tempo da animação em ms (1.5s)
+
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            const offset = getCustomOffset(targetId);
+            scrollToTarget(targetElement, offset, 1500);
+        }
     });
 });
 
-function smoothScroll(target, offset, duration) {
-    const start = window.scrollY;
-    const end = target.offsetTop - offset;
-    const distance = end - start;
+function getCustomOffset(targetId) {
+    switch (targetId) {
+        case "#about": return 270;  // Ajuste ideal para "About me"
+        case "#skills": return 420; // Ajuste ideal para "Skills"
+        case "#projects": return 200; // Ajuste ideal para "Projects"
+        default: return 50; // Fallback padrão
+    }
+}
+
+function scrollToTarget(target, offset, duration) {
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
     let startTime = null;
 
-    function animationStep(timestamp) {
-        if (!startTime) startTime = timestamp;
-        const timeElapsed = timestamp - startTime;
-        const progress = Math.min(timeElapsed / duration, 1);
-        const ease = progress < 0.5 
-            ? 2 * progress * progress 
+    function animationStep(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        const easeInOut = progress < 0.5
+            ? 2 * progress * progress
             : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
-        window.scrollTo(0, start + distance * ease);
+        window.scrollTo(0, startPosition + distance * easeInOut);
 
-        if (timeElapsed < duration) {
+        if (elapsed < duration) {
             requestAnimationFrame(animationStep);
         }
     }
