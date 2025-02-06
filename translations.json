@@ -4,19 +4,25 @@
         "name": "Enzo Caresato Colamego",
         "occupation": "Data Analyst & Developer",
         "about": "About me",
+        "skills": "Skills",
         "projects": "Projects",
         "contact": "Contact",
         "about_section": "ABOUT ME",
-        "description": "Currently pursuing a Data Science degree at UFABC (Federal University of ABC), I work with tools such as Python, C, R, SQL, Excel, HTML, CSS, and JavaScript. My goal is to explore hidden patterns in data and transform them into powerful insights, generating a real impact through technology. I am always seeking to improve my knowledge and apply technical expertise to add value in every project."
+        "description": "Currently studying Data Science at UFABC (Universidade Federal do ABC). I also actively contribute to the data team at GreenTeam, the university's hacking group. My goal is to uncover hidden patterns in data and transform them into meaningful insights, driving real impact through technology while I expand my knowledge and apply expertise to deliver value in every project",
+        "skills_section": "SKILLS",
+        "projects_section": "PROJECTS"
     },
     "pt-br": {
         "title": "Portfólio de Enzo Caresato Colamego",
         "name": "Enzo Caresato Colamego",
         "occupation": "Analista de Dados & Desenvolvedor",
         "about": "Sobre mim",
+        "skills": "Habilidades",
         "projects": "Projetos",
         "contact": "Contato",
         "about_section": "SOBRE MIM",
-        "description": "Atualmente cursando Ciência de Dados na UFABC (Universidade Federal do ABC), trabalho com ferramentas como Python, C, R, SQL, Excel, HTML, CSS e JavaScript. Meu objetivo é explorar padrões ocultos nos dados e transformá-los em insights poderosos, gerando um impacto real por meio da tecnologia. Estou sempre buscando aprimorar meu conhecimento e aplicar expertise técnica para agregar valor em cada projeto."
+        "description": "Atualmente estudando Ciência de Dados na UFABC (Universidade Federal do ABC). Também contribuo ativamente com a equipe de dados da GreenTeam, entidade de hacking da universidade. Meu objetivo é descobrir padrões ocultos nos dados e transformá-los em insights significativos, gerando impacto real por meio da tecnologia enquanto expando meu conhecimento e aplico expertise para entregar valor em cada projeto",
+        "skills_section": "HABILIDADES",
+        "projects_section": "PROJETOS"
     }
 }
