@@ -12,7 +12,7 @@
     text-align: center;
     position: relative;
     top: 6.3em;
-    right: 0.05em;
+    left: 0.05em;
     color: var(--text-color);
     font-family: "Lexend Deca", serif;
     font-optical-sizing: auto;
