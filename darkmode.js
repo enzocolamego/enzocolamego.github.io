@@ -22,4 +22,10 @@ if (darkmode === "active") {
 button.addEventListener('click', () => {
     darkmode = localStorage.getItem('darkmode');
     darkmode !== "active" ? enableDarkmode() : disableDarkmode();
+
+    elements.forEach((element) => {
+        element.classList.remove('show');
+        void element.offsetWidth;
+        element.classList.add('show');
+    });
 });
