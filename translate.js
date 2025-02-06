@@ -27,11 +27,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (translations.name) document.querySelector('.name h1').textContent = translations.name;
         if (translations.occupation) document.querySelector('.occupation h2').innerHTML = translations.occupation;
         if (translations.about) document.querySelector('.menu-about').textContent = translations.about;
+        if (translations.skills) document.querySelector('.menu-skills').textContent = translations.skills;
         if (translations.projects) document.querySelector('.menu-projects').textContent = translations.projects;
         if (translations.contact) document.querySelector('.menu-contact').textContent = translations.contact;
         if (translations.about_section) document.querySelector('#about').textContent = translations.about_section;
         if (translations.description) document.querySelector('#description').textContent = translations.description;
         if (translations.projects_section) document.querySelector('#projects').textContent = translations.projects_section;
+        if (translations.skills_section) document.querySelector('#skills').textContent = translations.skills_section;
     }
 
     function updateButtonState() {
@@ -52,5 +54,3 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.Bra').style.display = 'block';
     }
 });
-
-
